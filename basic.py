@@ -1,3 +1,6 @@
+# practicepython.org
+
+
 ###### character input
 
 # create a program that asks for user input
@@ -418,4 +421,111 @@
 # print(fibonacci())
 
 ##### list remove duplicates
+
+# write a function that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates
+
+# this one uses a for loop
+# def dedupe_v1(x):
+#   y = []
+#   for i in x: 
+#     if i not in y:
+#       y.append(i)
+#   return y 
+
+# this one uses set 
+# def dedupe_v2(x):
+#   return list(set(x))
+
+# a = [1, 2, 3, 4, 3, 2, 1]
+# # print(a)
+# print(dedupe_v1(a))
+# print(dedupe_v2(a))
+
+##### reverse word order 
+# write a function that asks the user for a long string containung multiple words. prit back the user same string except w. words reversed
+
+# loop thru the words and insert each word at the beginning of the result 
+# def reverse_v1(x):
+#   y = x.split()
+#   result = []
+#   for word in y:
+#     result.insert(0,word)
+#   return " ".join(result)
+
+# method 2
+# def reverse_v2(x):
+#   y = x.split()
+#   return " ".join(y[::-1])
+
+# method 3
+#def reverse_v3(x):
+#  y = x.split()
+#  return " ".join(reversed(y))
+  
+# method 4 
+# def reverse_v4(x):
+#   y = x.split()
+#   y.reverse()
+#   return " ".join(y)
+
+# test1 = input("enter a sentence: ")
+# print(reverse_v1(test1))
+# print(reverse_v2(test1))
+# print(reverse_v3(test1))
+# print(reverse_v4(test1))
+
+##### password generator
+
+# import random 
+
+# a = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+# passlen = 8 
+# b = "".join(random.sample(a,passlen))
+# print(b)
+
+# why is there size = 8
+# import string 
+# import random 
+
+# def pw_gen(size = 8, chars=string.ascii_letters + string.digits + string.punctuation):
+#   return ''.join(random.choice(chars) for _ in range(size))
+
+# print(pw_gen(int(input("how many characters in your password?"))))
+
+##### max of three 
+
+# def max_of_three(a,b,c):
+#   max_3 = 0 
+#   if a > b:
+#     if a > c: 
+#       max_3 = c 
+#     else: 
+#       max_3 = a 
+#   else: 
+#     if b > c:
+#       max_3 = b 
+#     else: 
+#       max_3 = c 
+#   return max_3 
+# print(max_of_three(11, 5, 7))
+
+# import sys # this one not working either 
+
+# if len(sys.argv) < 4: 
+#   print("Usage <value1> <valu2> <value3>")
+#   sys.exit ( 1 )
+
+# arg1 = sys.argv[1]
+# arg2 = sys.argv[2]
+# arg3 = sys.argv[3]
+
+# def maxfunction(a, b, c):
+#   if (a > b) and (a > c):
+#     print("max value is :"), a
+#   elif (b > a) and (b > c):
+#     print("max value is :"), b
+#   elif (c > a) and (c > b): 
+#     print("max value is :"), c
+  
+# print(maxfunction(arg1, arg2, arg3))
 
