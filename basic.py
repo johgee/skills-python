@@ -271,33 +271,151 @@
   
 # print(compare(user1_answer, user2_answer))
 
-print('''please pick one:
-rock
-scissors
-paper''')
+# print('''please pick one:
+# rock
+# scissors
+# paper''')
 
-while True:
-  game_dict = {'rock': 1, 'scissors': 2, 'paper': 3}
-  player_a = str(input("player a: "))
-  player_b = str(input("player b: "))
-  a = game_dict.get(player_a)
-  b= game_dict.get(player_b)
-  dif = a - b
+# while True:
+#   game_dict = {'rock': 1, 'scissors': 2, 'paper': 3}
+#   player_a = str(input("player a: "))
+#   player_b = str(input("player b: "))
+#   a = game_dict.get(player_a)
+#   b= game_dict.get(player_b)
+#   dif = a - b
 
-  if dif in [-1, 2]:
-    print('player a wins.')
-    if str(input('do you want to plau another game, yes or no?\n')) == 'yes':
-      continue 
-    else: 
-      print('game over.')
-      break 
-  elif dif in [-2, 1]:
-    print('player b wins')
-    if str(input('do you want to play another game, yes or no?\n')) == 'yes':
-      continue 
-    else: 
-      print('game over.')
-      break 
-  else: 
-    print('draw. please continue.')
-    print('')
+#   if dif in [-1, 2]:
+#     print('player a wins.')
+#     if str(input('do you want to plau another game, yes or no?\n')) == 'yes':
+#       continue 
+#     else: 
+#       print('game over.')
+#       break 
+#   elif dif in [-2, 1]:
+#     print('player b wins')
+#     if str(input('do you want to play another game, yes or no?\n')) == 'yes':
+#       continue 
+#     else: 
+#       print('game over.')
+#       break 
+#   else: 
+#     print('draw. please continue.')
+#     print('')
+
+# def square(x):
+#   return x * x 
+# print(square(5))
+
+# def square(x):
+#   return x + x 
+# print(square(5))
+
+# def square(x, y):
+#   return x + y 
+# print(square(1, 2))
+
+# def square(x, y):
+#   return x / y
+# print(square(8, 4))
+
+# def numbers(x, y):
+#   return x - y
+# print(numbers(10, 5))
+
+##### guessing game one 
+
+# generte a random number betwen 1 and 9 
+
+# import random 
+
+# rd = random.randint(1, 9)
+# guess = 0 
+# c = 0
+# while guess != rd and guess != "exit":
+#   guess = input("enter a number between 1 and 9")
+
+#   if guess == "exit":
+#     break 
+#   guess = int(guess)
+#   c += 1
+
+#   if guess < rd: 
+#     print("too low")
+#   elif guess > rd: 
+#     print("too high")
+#   else: 
+#     print("right")
+#     print("you took only", c, "tries!")
+# input()
+
+##### check primality functions solutions (PRIME NUMBER?)
+
+# ask the user for a number and determine whether the number is prime or not
+
+# import sys 
+# number = input("please enter a number" + "\n")
+# number = int(number)
+# prime = False #initiate boolean for true false, default false 
+# if number > 0:
+#   for x in range (2, number - 1): # this range excludes number and 1, both of which number is divisible 
+#     if number % x != 0: # if number isn't evenly divisible by x, start over with thenext one 
+#       continue 
+#     elif number % x == 0: # if number is evenly divisible by x, it can't be prime 
+#       sys.exit("not a prime number")
+#   sys.exit("the number is prime") # number wasn't evenly divislbe by any x, so it's prime 
+# elif number == 0: 
+#   sys.exit("number is not prime") # 0 is not prime 
+# else: # if number is elss than 0, the number is not prime 
+#   sys.exit("number is not prime")
+  
+##### list ends
+
+# take a list of numbers and make a new list with only first and last elements 
+
+# a_list = [5, 10, 15, 20, 25]
+# def list_ends(a_list):
+#   return [a_list[0], a_list[len(a_list)-1]]
+
+# print(list_ends(a_list))
+
+##### fibonacci (sum of the previous two numbers in the sequence)
+
+# def gen_fib():
+#   count = int(input("enter a number for fibonacci"))
+#   i = 1
+#   if count == 0:
+#     fib = []
+#   elif count == 1:
+#     fib = [1]
+#   elif count == 2:
+#     fib = [1, 1]
+#   elif count > 2:
+#     fib = [1, 1]
+#     while i < (count - 1):
+#       fib.append(fib[i] + fib[i - 1])
+#       i += 1
+  
+#   return fib 
+
+# print(gen_fib())
+
+# def fibonacci():
+#   num = int(input("enter a number for fibonacci"))
+#   i = 1 
+#   if num == 0:
+#     fib = []
+#   elif num == 1:
+#     fib = [1]
+#   elif num == 2:
+#     fib = [1,1]
+#   elif num > 2:
+#     fib = [1,1]
+#     while i < (num - 1):
+#       fib.append(fib[i] + fib[i-1])
+#       i += 1
+#   return fib 
+
+# print(fibonacci())
+
+##### list remove duplicates
+
