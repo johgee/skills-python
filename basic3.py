@@ -134,3 +134,58 @@
 #     print("my name is : " + myname)
 # my_function5("grace")
 # my_function5()
+
+# def divide(num1, num2):
+#     print(num1/num2)
+
+# divide(20, 2)
+# divide(30, 10)
+# divide(40, 0) # zero division error: division by zero 
+# divide(30, 15)
+
+# def divide2(num1, num2):
+#     if(num2!=0):
+#         print(num1/num2)
+#     else:
+#         print("can't be divided by zero")
+# divide2(20, 2)
+# divide2(30, 10)
+# divide2(40, 0) 
+# divide2(30, 15)
+
+# def divide2(num1, num2):
+#     print(num1/num2)
+
+# try:
+#     divide2(20, 2)
+# except:
+#     print("there is an error")
+
+# try:
+#     divide2(40, 0)
+# except:
+#     print("there is an error")
+
+# try:
+#     divide2(30, 15)
+# except: 
+#     print("there is an error")
+
+# def divide4(num1, num2):
+#     try:
+#         print(num1/num2)
+#     except:
+#         print("there is an error")
+# divide4(10, 5)
+# divide4(9, 0)
+# divide4(30, 15)
+
+# a = 10
+# b = 20
+# result = a + b
+# print(result)
+
+num1 = input("enter the first number: ")
+num2 = input("enter the second number: ")
+result = num1+num2 
+print(result)
