@@ -190,12 +190,54 @@
 # result = num1+num2 
 # print(result)
 
-def sayHello(name):
-    print("Hello "+name)
+# def sayHello(name):
+#     print("Hello "+name)
 
-import basic3
-basic3.sayHello("Grace")
+# import basic3
+# basic3.sayHello("Grace")
 
-import basic3 as b
-b.sayHello("Grace")
+# import basic3 as b
+# b.sayHello("Grace")
+
+# class MyClass:
+#     a = 10
+#     b = 20 
+# #calling the class
+# classObject = MyClass()
+# print(classObject.a) # this will print 10
+# print(classObject.b) # this will print 20
+
+# class MyClass2:
+#     a = 0
+#     b = 0
+
+#     def initiate(self, x, y):
+#         self.a = x
+#         self.b = y 
+
+#         print(self.a)
+#         print(self.b)
+
+# #calling class MyClass2
+# classObj2 = MyClass2()
+# classObj2.initiate(22, 33) # this will print 22 and 33
+
+# class MyClass3:
+#     def __init__(self, x, y):
+#         self.a = x 
+#         self.b = y
+    
+#     def printall(self):
+#         print(self.a)
+#         print(self.b)
+# #calling class MyClass3
+# classObj3 = MyClass3(62, 70)
+# classObj3.printall() # this will print 62 and 70
+
+# built in method in a class 
+
+# class MyClass4:
+#     pass 
+# #calling dir() function
+# print(dir(MyClass4))
 
