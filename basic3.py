@@ -185,7 +185,17 @@
 # result = a + b
 # print(result)
 
-num1 = input("enter the first number: ")
-num2 = input("enter the second number: ")
-result = num1+num2 
-print(result)
+# num1 = input("enter the first number: ")
+# num2 = input("enter the second number: ")
+# result = num1+num2 
+# print(result)
+
+def sayHello(name):
+    print("Hello "+name)
+
+import basic3
+basic3.sayHello("Grace")
+
+import basic3 as b
+b.sayHello("Grace")
+
